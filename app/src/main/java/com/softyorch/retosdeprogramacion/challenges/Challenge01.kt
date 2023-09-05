@@ -23,12 +23,12 @@ fun leapYears() {
     }
 }
 
-fun isFizz(value: Int) = value % 3 == 0
+private fun isFizz(value: Int) = value % 3 == 0
 
-fun isBuzz(value: Int) = value % 5 == 0
+private fun isBuzz(value: Int) = value % 5 == 0
 
-fun isFizzBuzz(value: Int) = isFizz(value) && isBuzz(value)
+private fun isFizzBuzz(value: Int) = isFizz(value) && isBuzz(value)
 
-fun printValue(value: Int) = println("$value\n")
+private fun printValue(value: Int) = println("$value\n")
 
-fun printFizzBuzz(value: String) = println("$value\n")
+private fun printFizzBuzz(value: String) = println("$value\n")

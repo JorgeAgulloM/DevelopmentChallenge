@@ -19,7 +19,7 @@ fun whatIsThisNumber() {
 
 }
 
-fun isPrime(num: Int): Boolean {
+private fun isPrime(num: Int): Boolean {
     for (i in 2..< num) {
         if (num % i == 0) {
             return false
@@ -28,7 +28,7 @@ fun isPrime(num: Int): Boolean {
     return true
 }
 
-fun isFibonacci(num: Int): Boolean {
+private fun isFibonacci(num: Int): Boolean {
     val fibonacci = arrayListOf(1, 2)
     if (num == 1 || num == 2) return true
     for (i in 1..num) {
@@ -39,4 +39,4 @@ fun isFibonacci(num: Int): Boolean {
     return false
 }
 
-fun isPair(num: Int): Boolean = num % 2 == 0
+private fun isPair(num: Int): Boolean = num % 2 == 0

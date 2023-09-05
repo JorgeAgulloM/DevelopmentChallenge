@@ -26,16 +26,16 @@ fun theHackerLanguage(text: String) {
     printSolution("Transformación a leet: $textResult")
 }
 
-fun searchNumber(char: Char): String = leetNumbers.elementAt(numbers.indexOf(char.toString().uppercase(Locale.ROOT)))
+private fun searchNumber(char: Char): String = leetNumbers.elementAt(numbers.indexOf(char.toString().uppercase(Locale.ROOT)))
 
-fun searchChar(char: Char): String = leetAlphabet.elementAt(alphabet.indexOf(char.lowercase(Locale.ROOT)))
+private fun searchChar(char: Char): String = leetAlphabet.elementAt(alphabet.indexOf(char.lowercase(Locale.ROOT)))
 
-fun printSolution(value: String) = println(value)
+private fun printSolution(value: String) = println(value)
 
-val alphabet = arrayListOf("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "á", "é", "í", "ó", "ú")
+private val alphabet = arrayListOf("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "á", "é", "í", "ó", "ú")
 
-val leetAlphabet = arrayListOf("4", "I3", "[", ")", "3", "|=", "&", "#", "1", ",_l", ">|", "1", """/\/\""", "^/", "0", "|*", "(_,)", "I2", "5", "7", "(_)", """\/""", """\/\/""", "><", "j", "2", "4", "3", "1", "0", "(_)")
+private val leetAlphabet = arrayListOf("4", "I3", "[", ")", "3", "|=", "&", "#", "1", ",_l", ">|", "1", """/\/\""", "^/", "0", "|*", "(_,)", "I2", "5", "7", "(_)", """\/""", """\/\/""", "><", "j", "2", "4", "3", "1", "0", "(_)")
 
-val numbers = arrayListOf("1", "2", "3", "4", "5", "6", "7", "8", "9", "0")
+private val numbers = arrayListOf("1", "2", "3", "4", "5", "6", "7", "8", "9", "0")
 
-val leetNumbers = arrayListOf("L", "R", "E", "A", "S", "b", "T", "B", "g", "o")
+private val leetNumbers = arrayListOf("L", "R", "E", "A", "S", "b", "T", "B", "g", "o")

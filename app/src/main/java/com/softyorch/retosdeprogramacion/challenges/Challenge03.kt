@@ -47,6 +47,6 @@ fun tennisMatch() {
 
 }
 
-fun upperPlayer(p1: Int, p2: Int) = if (p1 > p2) "P1" else "P2"
+private fun upperPlayer(p1: Int, p2: Int) = if (p1 > p2) "P1" else "P2"
 
-val values = arrayListOf("Love", "15", "30", "40")
+private val values = arrayListOf("Love", "15", "30", "40")

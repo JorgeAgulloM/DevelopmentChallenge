@@ -21,7 +21,7 @@ fun passGenerator() {
     println("Pass result: $passResult")
 }
 
-fun nextChar(): String {
+private fun nextChar(): String {
     val possibilities = arrayListOf(alphabetLowerCase, symbols, numbersPass)
 
     possibilities.let { arrayList ->

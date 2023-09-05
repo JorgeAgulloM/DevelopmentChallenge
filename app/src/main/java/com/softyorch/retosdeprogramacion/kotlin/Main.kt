@@ -8,6 +8,7 @@ import com.softyorch.retosdeprogramacion.challenges.pseudoRandom
 import com.softyorch.retosdeprogramacion.challenges.rocPaperScissorsLizardSpock
 import com.softyorch.retosdeprogramacion.challenges.tennisMatch
 import com.softyorch.retosdeprogramacion.challenges.theHackerLanguage
+import com.softyorch.retosdeprogramacion.challenges.typeOfString
 import com.softyorch.retosdeprogramacion.challenges.whatIsThisNumber
 
 fun main() {
@@ -23,6 +24,7 @@ fun main() {
         6 -> rocPaperScissorsLizardSpock()
         7 -> magicSortingHat()
         8 -> pseudoRandom()
+        9 -> typeOfString()
         else -> {
             println("No se ha encontrado la prueba")
         }

@@ -51,10 +51,9 @@ fun magicSortingHat() {
 
 fun calculateResult(): Int {
     userRequest.forEachIndexed { userI, userValue ->
-        if (userValue == houseValues.elementAt(0)[userI]) pointsAcquired[0]++
-        if (userValue == houseValues.elementAt(1)[userI]) pointsAcquired[1]++
-        if (userValue == houseValues.elementAt(2)[userI]) pointsAcquired[2]++
-        if (userValue == houseValues.elementAt(3)[userI]) pointsAcquired[3]++
+        (0..3).forEach { index ->
+            addValue(userI, userValue, index)
+        }
     }
     println(pointsAcquired)
 
@@ -64,7 +63,11 @@ fun calculateResult(): Int {
             result = it
     }
 
-    return result
+    return pointsAcquired.indexOf(result)
+}
+
+private fun addValue(userI: Int, userValue: Int, index: Int) {
+    if (userValue == houseValues.elementAt(index)[userI]) pointsAcquired[index]++
 }
 
 private val userRequest = mutableListOf(0, 0, 0, 0, 0)

@@ -2,6 +2,7 @@ package com.softyorch.retosdeprogramacion.kotlin
 
 import com.softyorch.retosdeprogramacion.challenges.helloWorld
 import com.softyorch.retosdeprogramacion.challenges.leapYears
+import com.softyorch.retosdeprogramacion.challenges.magicSortingHat
 import com.softyorch.retosdeprogramacion.challenges.passGenerator
 import com.softyorch.retosdeprogramacion.challenges.rocPaperScissorsLizardSpock
 import com.softyorch.retosdeprogramacion.challenges.tennisMatch
@@ -19,6 +20,7 @@ fun main() {
         4 -> whatIsThisNumber()
         5 -> helloWorld()
         6 -> rocPaperScissorsLizardSpock()
+        7 -> magicSortingHat()
         else -> {
             println("No se ha encontrado la prueba")
         }

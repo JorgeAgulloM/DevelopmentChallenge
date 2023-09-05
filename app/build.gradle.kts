@@ -1,3 +1,5 @@
+import java.util.Properties
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
@@ -15,6 +17,11 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        android.buildFeatures.buildConfig = true
+        val projectProperties = readProperties(file("../apikeys.properties"))
+        buildConfigField("String", "MARVEL_PRIVATE_API_KEY", projectProperties["MARVEL_PRIVATE_API_KEY"] as String)
+        buildConfigField("String", "MARVEL_PUBLIC_API_KEY", projectProperties["MARVEL_PUBLIC_API_KEY"] as String)
     }
 
     buildTypes {
@@ -32,6 +39,12 @@ android {
     }
     kotlinOptions {
         jvmTarget = "1.8"
+    }
+}
+
+fun readProperties(propertiesFile: File) = Properties().apply {
+    propertiesFile.inputStream().use { fis ->
+        load(fis)
     }
 }
 

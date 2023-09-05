@@ -1,5 +1,6 @@
 package com.softyorch.retosdeprogramacion.kotlin
 
+import com.softyorch.retosdeprogramacion.challenges.helloWorld
 import com.softyorch.retosdeprogramacion.challenges.leapYears
 import com.softyorch.retosdeprogramacion.challenges.passGenerator
 import com.softyorch.retosdeprogramacion.challenges.tennisMatch
@@ -15,6 +16,8 @@ fun main() {
         2 -> tennisMatch()
         3 -> passGenerator()
         4 -> whatIsThisNumber()
+        5 -> helloWorld()
+
         else -> {
             println("No se ha encontrado la prueba")
         }

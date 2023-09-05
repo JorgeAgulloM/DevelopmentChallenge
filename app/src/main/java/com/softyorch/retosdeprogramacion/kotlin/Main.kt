@@ -3,6 +3,7 @@ package com.softyorch.retosdeprogramacion.kotlin
 import com.softyorch.retosdeprogramacion.challenges.helloWorld
 import com.softyorch.retosdeprogramacion.challenges.leapYears
 import com.softyorch.retosdeprogramacion.challenges.passGenerator
+import com.softyorch.retosdeprogramacion.challenges.rocPaperScissorsLizardSpock
 import com.softyorch.retosdeprogramacion.challenges.tennisMatch
 import com.softyorch.retosdeprogramacion.challenges.theHackerLanguage
 import com.softyorch.retosdeprogramacion.challenges.whatIsThisNumber
@@ -17,7 +18,7 @@ fun main() {
         3 -> passGenerator()
         4 -> whatIsThisNumber()
         5 -> helloWorld()
-
+        6 -> rocPaperScissorsLizardSpock()
         else -> {
             println("No se ha encontrado la prueba")
         }

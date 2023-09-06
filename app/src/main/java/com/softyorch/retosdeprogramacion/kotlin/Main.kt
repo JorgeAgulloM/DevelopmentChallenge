@@ -6,6 +6,7 @@ import com.softyorch.retosdeprogramacion.challenges.helloWorld
 import com.softyorch.retosdeprogramacion.challenges.isFriday13
 import com.softyorch.retosdeprogramacion.challenges.leapYears
 import com.softyorch.retosdeprogramacion.challenges.magicSortingHat
+import com.softyorch.retosdeprogramacion.challenges.octalAndHexadecimalConverter
 import com.softyorch.retosdeprogramacion.challenges.passGenerator
 import com.softyorch.retosdeprogramacion.challenges.pseudoRandom
 import com.softyorch.retosdeprogramacion.challenges.rocPaperScissorsLizardSpock
@@ -33,6 +34,7 @@ fun main() {
         11 -> getParametersValue()
         12 -> isFriday13()
         13 -> words()
+        14 -> octalAndHexadecimalConverter()
         else -> {
             println("No se ha encontrado la prueba")
         }

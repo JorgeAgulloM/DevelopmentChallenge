@@ -1,5 +1,6 @@
 package com.softyorch.retosdeprogramacion.kotlin
 
+import com.softyorch.retosdeprogramacion.challenges.aurebeshTraslator
 import com.softyorch.retosdeprogramacion.challenges.callPokemonApi
 import com.softyorch.retosdeprogramacion.challenges.getParametersValue
 import com.softyorch.retosdeprogramacion.challenges.helloWorld
@@ -35,6 +36,7 @@ fun main() {
         12 -> isFriday13()
         13 -> words()
         14 -> octalAndHexadecimalConverter()
+        15 -> aurebeshTraslator()
         else -> {
             println("No se ha encontrado la prueba")
         }

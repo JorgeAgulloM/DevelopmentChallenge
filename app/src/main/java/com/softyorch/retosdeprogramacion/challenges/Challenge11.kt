@@ -21,7 +21,7 @@ fun callPokemonApi() {
     }
 }
 
-fun rickAndMortyAPI() {
+private fun rickAndMortyAPI() {
     val json = URL("https://rickandmortyapi.com/api/character/2").readText()
     println(json)
 }

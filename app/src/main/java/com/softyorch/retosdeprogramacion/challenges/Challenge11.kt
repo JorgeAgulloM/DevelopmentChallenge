@@ -17,11 +17,11 @@ import java.net.URL
 
 fun callPokemonApi() {
     runBlocking(Dispatchers.IO) {
-        rickandmortyapi()
+        rickAndMortyAPI()
     }
 }
 
-fun rickandmortyapi() {
+fun rickAndMortyAPI() {
     val json = URL("https://rickandmortyapi.com/api/character/2").readText()
     println(json)
 }

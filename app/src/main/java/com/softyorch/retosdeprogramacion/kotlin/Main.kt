@@ -15,6 +15,7 @@ import com.softyorch.retosdeprogramacion.challenges.rocPaperScissorsLizardSpock
 import com.softyorch.retosdeprogramacion.challenges.tennisMatch
 import com.softyorch.retosdeprogramacion.challenges.theHackerLanguage
 import com.softyorch.retosdeprogramacion.challenges.typeOfString
+import com.softyorch.retosdeprogramacion.challenges.webScraping
 import com.softyorch.retosdeprogramacion.challenges.whatIsThisNumber
 import com.softyorch.retosdeprogramacion.challenges.words
 
@@ -39,6 +40,7 @@ fun main() {
         14 -> octalAndHexadecimalConverter()
         15 -> aurebeshTraslator()
         16 -> reedGithubInfo()
+        17 -> webScraping()
         else -> {
             println("No se ha encontrado la prueba")
         }

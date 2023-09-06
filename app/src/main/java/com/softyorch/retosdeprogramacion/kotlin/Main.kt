@@ -10,6 +10,7 @@ import com.softyorch.retosdeprogramacion.challenges.magicSortingHat
 import com.softyorch.retosdeprogramacion.challenges.octalAndHexadecimalConverter
 import com.softyorch.retosdeprogramacion.challenges.passGenerator
 import com.softyorch.retosdeprogramacion.challenges.pseudoRandom
+import com.softyorch.retosdeprogramacion.challenges.reedGithubInfo
 import com.softyorch.retosdeprogramacion.challenges.rocPaperScissorsLizardSpock
 import com.softyorch.retosdeprogramacion.challenges.tennisMatch
 import com.softyorch.retosdeprogramacion.challenges.theHackerLanguage
@@ -37,6 +38,7 @@ fun main() {
         13 -> words()
         14 -> octalAndHexadecimalConverter()
         15 -> aurebeshTraslator()
+        16 -> reedGithubInfo()
         else -> {
             println("No se ha encontrado la prueba")
         }

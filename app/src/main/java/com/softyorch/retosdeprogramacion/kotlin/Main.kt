@@ -3,6 +3,7 @@ package com.softyorch.retosdeprogramacion.kotlin
 import com.softyorch.retosdeprogramacion.challenges.callPokemonApi
 import com.softyorch.retosdeprogramacion.challenges.getParametersValue
 import com.softyorch.retosdeprogramacion.challenges.helloWorld
+import com.softyorch.retosdeprogramacion.challenges.isFriday13
 import com.softyorch.retosdeprogramacion.challenges.leapYears
 import com.softyorch.retosdeprogramacion.challenges.magicSortingHat
 import com.softyorch.retosdeprogramacion.challenges.passGenerator
@@ -29,6 +30,7 @@ fun main() {
         9 -> typeOfString()
         10 -> callPokemonApi()
         11 -> getParametersValue()
+        12 -> isFriday13()
         else -> {
             println("No se ha encontrado la prueba")
         }

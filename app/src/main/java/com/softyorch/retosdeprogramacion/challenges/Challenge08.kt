@@ -49,7 +49,7 @@ fun magicSortingHat() {
 
 }
 
-fun calculateResult(): Int {
+private fun calculateResult(): Int {
     userRequest.forEachIndexed { userI, userValue ->
         (0..3).forEach { index ->
             addValue(userI, userValue, index)

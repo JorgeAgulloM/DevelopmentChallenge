@@ -13,6 +13,7 @@ import com.softyorch.retosdeprogramacion.challenges.tennisMatch
 import com.softyorch.retosdeprogramacion.challenges.theHackerLanguage
 import com.softyorch.retosdeprogramacion.challenges.typeOfString
 import com.softyorch.retosdeprogramacion.challenges.whatIsThisNumber
+import com.softyorch.retosdeprogramacion.challenges.words
 
 fun main() {
 
@@ -31,6 +32,7 @@ fun main() {
         10 -> callPokemonApi()
         11 -> getParametersValue()
         12 -> isFriday13()
+        13 -> words()
         else -> {
             println("No se ha encontrado la prueba")
         }

@@ -26,17 +26,13 @@ private fun abcToCaesar(text: String, isEncrypt: Boolean = false): String {
     var textEncrypted = ""
 
     text.lowercase().forEachIndexed { _, char ->
-
         if (char.isLetter()) {
             var index = abc.indexOf(char)
-
             index = if (isEncrypt) encrypt(index) - 1 else decrypt(index + 1)
-
             textEncrypted += abc[index]
         } else {
             textEncrypted += char
         }
-
     }
     return textEncrypted
 }

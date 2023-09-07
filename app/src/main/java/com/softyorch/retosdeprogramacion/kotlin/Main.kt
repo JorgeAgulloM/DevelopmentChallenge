@@ -15,6 +15,7 @@ import com.softyorch.retosdeprogramacion.challenges.rocPaperScissorsLizardSpock
 import com.softyorch.retosdeprogramacion.challenges.tennisMatch
 import com.softyorch.retosdeprogramacion.challenges.textAnalytics
 import com.softyorch.retosdeprogramacion.challenges.theHackerLanguage
+import com.softyorch.retosdeprogramacion.challenges.twinPrimes
 import com.softyorch.retosdeprogramacion.challenges.typeOfString
 import com.softyorch.retosdeprogramacion.challenges.webScraping
 import com.softyorch.retosdeprogramacion.challenges.whatIsThisNumber
@@ -25,26 +26,27 @@ fun main() {
 
     println("Porfavor, introduce el número de prueba: ")
     when (readlnOrNull()?.toInt() ?: 0) {
-        0 -> leapYears()
-        1 -> theHackerLanguage("Código leet. Hola, me llamo Jorge y nací en 1982. Soy desarrollador de software.")
-        2 -> tennisMatch()
-        3 -> passGenerator()
-        4 -> whatIsThisNumber()
-        5 -> helloWorld()
-        6 -> rocPaperScissorsLizardSpock()
-        7 -> magicSortingHat()
-        8 -> pseudoRandom()
-        9 -> typeOfString()
-        10 -> callPokemonApi()
-        11 -> getParametersValue()
-        12 -> isFriday13()
-        13 -> words()
-        14 -> octalAndHexadecimalConverter()
-        15 -> aurebeshTraslator()
-        16 -> reedGithubInfo()
-        17 -> webScraping()
-        18 -> textAnalytics()
-        19 -> zeldaTriforce()
+        1 -> leapYears()
+        2 -> theHackerLanguage("Código leet. Hola, me llamo Jorge y nací en 1982. Soy desarrollador de software.")
+        3 -> tennisMatch()
+        4 -> passGenerator()
+        5 -> whatIsThisNumber()
+        6 -> helloWorld()
+        7 -> rocPaperScissorsLizardSpock()
+        8 -> magicSortingHat()
+        9 -> pseudoRandom()
+        10 -> typeOfString()
+        11 -> callPokemonApi()
+        12 -> getParametersValue()
+        13 -> isFriday13()
+        14 -> words()
+        15 -> octalAndHexadecimalConverter()
+        16 -> aurebeshTraslator()
+        17 -> reedGithubInfo()
+        18 -> webScraping()
+        19 -> textAnalytics()
+        20 -> zeldaTriforce()
+        21 -> twinPrimes()
         else -> {
             println("No se ha encontrado la prueba")
         }

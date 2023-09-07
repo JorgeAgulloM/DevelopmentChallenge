@@ -13,6 +13,7 @@ import com.softyorch.retosdeprogramacion.challenges.pseudoRandom
 import com.softyorch.retosdeprogramacion.challenges.reedGithubInfo
 import com.softyorch.retosdeprogramacion.challenges.rocPaperScissorsLizardSpock
 import com.softyorch.retosdeprogramacion.challenges.tennisMatch
+import com.softyorch.retosdeprogramacion.challenges.textAnalytics
 import com.softyorch.retosdeprogramacion.challenges.theHackerLanguage
 import com.softyorch.retosdeprogramacion.challenges.typeOfString
 import com.softyorch.retosdeprogramacion.challenges.webScraping
@@ -41,6 +42,7 @@ fun main() {
         15 -> aurebeshTraslator()
         16 -> reedGithubInfo()
         17 -> webScraping()
+        18 -> textAnalytics()
         else -> {
             println("No se ha encontrado la prueba")
         }

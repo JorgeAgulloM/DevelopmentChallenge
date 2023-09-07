@@ -19,6 +19,7 @@ import com.softyorch.retosdeprogramacion.challenges.typeOfString
 import com.softyorch.retosdeprogramacion.challenges.webScraping
 import com.softyorch.retosdeprogramacion.challenges.whatIsThisNumber
 import com.softyorch.retosdeprogramacion.challenges.words
+import com.softyorch.retosdeprogramacion.challenges.zeldaTriforce
 
 fun main() {
 
@@ -43,6 +44,7 @@ fun main() {
         16 -> reedGithubInfo()
         17 -> webScraping()
         18 -> textAnalytics()
+        19 -> zeldaTriforce()
         else -> {
             println("No se ha encontrado la prueba")
         }

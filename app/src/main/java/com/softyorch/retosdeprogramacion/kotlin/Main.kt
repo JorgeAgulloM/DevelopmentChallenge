@@ -2,6 +2,7 @@ package com.softyorch.retosdeprogramacion.kotlin
 
 import com.softyorch.retosdeprogramacion.challenges.aurebeshTraslator
 import com.softyorch.retosdeprogramacion.challenges.callPokemonApi
+import com.softyorch.retosdeprogramacion.challenges.dbConnector
 import com.softyorch.retosdeprogramacion.challenges.getParametersValue
 import com.softyorch.retosdeprogramacion.challenges.helloWorld
 import com.softyorch.retosdeprogramacion.challenges.isFriday13
@@ -49,6 +50,7 @@ fun main() {
         20 -> zeldaTriforce()
         21 -> twinPrimes()
         22 -> spiral()
+        23 -> dbConnector()
         else -> {
             println("No se ha encontrado la prueba")
         }

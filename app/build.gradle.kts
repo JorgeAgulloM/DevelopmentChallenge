@@ -53,6 +53,9 @@ dependencies {
     // https://central.sonatype.dev/artifact/org.eclipse.jgit/org.eclipse.jgit/
     implementation("org.eclipse.jgit:org.eclipse.jgit:6.4.0.202211300538-r")
 
+    // mySql connector
+    implementation("mysql:mysql-connector-java:8.0.21")
+
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.9.0")

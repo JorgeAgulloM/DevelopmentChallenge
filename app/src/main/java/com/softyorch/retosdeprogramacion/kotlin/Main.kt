@@ -12,6 +12,7 @@ import com.softyorch.retosdeprogramacion.challenges.passGenerator
 import com.softyorch.retosdeprogramacion.challenges.pseudoRandom
 import com.softyorch.retosdeprogramacion.challenges.reedGithubInfo
 import com.softyorch.retosdeprogramacion.challenges.rocPaperScissorsLizardSpock
+import com.softyorch.retosdeprogramacion.challenges.spiral
 import com.softyorch.retosdeprogramacion.challenges.tennisMatch
 import com.softyorch.retosdeprogramacion.challenges.textAnalytics
 import com.softyorch.retosdeprogramacion.challenges.theHackerLanguage
@@ -47,6 +48,7 @@ fun main() {
         19 -> textAnalytics()
         20 -> zeldaTriforce()
         21 -> twinPrimes()
+        22 -> spiral()
         else -> {
             println("No se ha encontrado la prueba")
         }

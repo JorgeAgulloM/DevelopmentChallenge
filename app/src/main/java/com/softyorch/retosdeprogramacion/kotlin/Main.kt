@@ -1,6 +1,7 @@
 package com.softyorch.retosdeprogramacion.kotlin
 
 import com.softyorch.retosdeprogramacion.challenges.aurebeshTraslator
+import com.softyorch.retosdeprogramacion.challenges.caesarEncryption
 import com.softyorch.retosdeprogramacion.challenges.callPokemonApi
 import com.softyorch.retosdeprogramacion.challenges.dbConnector
 import com.softyorch.retosdeprogramacion.challenges.getParametersValue
@@ -51,6 +52,7 @@ fun main() {
         21 -> twinPrimes()
         22 -> spiral()
         23 -> dbConnector()
+        24 -> caesarEncryption()
         else -> {
             println("No se ha encontrado la prueba")
         }

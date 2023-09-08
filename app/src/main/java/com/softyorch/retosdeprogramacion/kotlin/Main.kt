@@ -17,6 +17,7 @@ import com.softyorch.retosdeprogramacion.challenges.reedGithubInfo
 import com.softyorch.retosdeprogramacion.challenges.rocPaperScissorsLizardSpock
 import com.softyorch.retosdeprogramacion.challenges.spiral
 import com.softyorch.retosdeprogramacion.challenges.tennisMatch
+import com.softyorch.retosdeprogramacion.challenges.testingFriday13th
 import com.softyorch.retosdeprogramacion.challenges.textAnalytics
 import com.softyorch.retosdeprogramacion.challenges.theHackerLanguage
 import com.softyorch.retosdeprogramacion.challenges.twinPrimes
@@ -55,6 +56,7 @@ fun main() {
         23 -> dbConnector()
         24 -> caesarEncryption()
         25 -> konamiCode()
+        26 -> testingFriday13th()
         else -> {
             println("No se ha encontrado la prueba")
         }

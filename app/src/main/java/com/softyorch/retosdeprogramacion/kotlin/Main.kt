@@ -11,6 +11,7 @@ import com.softyorch.retosdeprogramacion.challenges.isFriday13
 import com.softyorch.retosdeprogramacion.challenges.konamiCode
 import com.softyorch.retosdeprogramacion.challenges.leapYears
 import com.softyorch.retosdeprogramacion.challenges.magicSortingHat
+import com.softyorch.retosdeprogramacion.challenges.mathExpression
 import com.softyorch.retosdeprogramacion.challenges.octalAndHexadecimalConverter
 import com.softyorch.retosdeprogramacion.challenges.passGenerator
 import com.softyorch.retosdeprogramacion.challenges.pseudoRandom
@@ -59,6 +60,7 @@ fun main() {
         25 -> konamiCode()
         26 -> testingFriday13th()
         27 -> countdown()
+        28 -> mathExpression()
         else -> {
             println("No se ha encontrado la prueba")
         }

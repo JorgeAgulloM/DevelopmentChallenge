@@ -7,6 +7,7 @@ import com.softyorch.retosdeprogramacion.challenges.callPokemonApi
 import com.softyorch.retosdeprogramacion.challenges.countdown
 import com.softyorch.retosdeprogramacion.challenges.dbConnector
 import com.softyorch.retosdeprogramacion.challenges.equalStrings
+import com.softyorch.retosdeprogramacion.challenges.excelNumbNameOfColumn
 import com.softyorch.retosdeprogramacion.challenges.getParametersValue
 import com.softyorch.retosdeprogramacion.challenges.helloWorld
 import com.softyorch.retosdeprogramacion.challenges.isFriday13
@@ -67,6 +68,7 @@ fun main() {
         29 -> equalStrings()
         30 -> t9Keyboard()
         31 -> abacusReader()
+        32 -> excelNumbNameOfColumn()
         else -> {
             println("No se ha encontrado la prueba")
         }

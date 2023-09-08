@@ -7,6 +7,7 @@ import com.softyorch.retosdeprogramacion.challenges.dbConnector
 import com.softyorch.retosdeprogramacion.challenges.getParametersValue
 import com.softyorch.retosdeprogramacion.challenges.helloWorld
 import com.softyorch.retosdeprogramacion.challenges.isFriday13
+import com.softyorch.retosdeprogramacion.challenges.konamiCode
 import com.softyorch.retosdeprogramacion.challenges.leapYears
 import com.softyorch.retosdeprogramacion.challenges.magicSortingHat
 import com.softyorch.retosdeprogramacion.challenges.octalAndHexadecimalConverter
@@ -53,6 +54,7 @@ fun main() {
         22 -> spiral()
         23 -> dbConnector()
         24 -> caesarEncryption()
+        25 -> konamiCode()
         else -> {
             println("No se ha encontrado la prueba")
         }

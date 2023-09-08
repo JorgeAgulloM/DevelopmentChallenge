@@ -19,6 +19,7 @@ import com.softyorch.retosdeprogramacion.challenges.pseudoRandom
 import com.softyorch.retosdeprogramacion.challenges.reedGithubInfo
 import com.softyorch.retosdeprogramacion.challenges.rocPaperScissorsLizardSpock
 import com.softyorch.retosdeprogramacion.challenges.spiral
+import com.softyorch.retosdeprogramacion.challenges.t9Keyboard
 import com.softyorch.retosdeprogramacion.challenges.tennisMatch
 import com.softyorch.retosdeprogramacion.challenges.testingFriday13th
 import com.softyorch.retosdeprogramacion.challenges.textAnalytics
@@ -63,6 +64,7 @@ fun main() {
         27 -> countdown()
         28 -> mathExpression()
         29 -> equalStrings()
+        30 -> t9Keyboard()
         else -> {
             println("No se ha encontrado la prueba")
         }

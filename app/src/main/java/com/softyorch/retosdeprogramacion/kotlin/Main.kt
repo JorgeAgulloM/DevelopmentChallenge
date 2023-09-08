@@ -1,5 +1,6 @@
 package com.softyorch.retosdeprogramacion.kotlin
 
+import com.softyorch.retosdeprogramacion.challenges.abacusReader
 import com.softyorch.retosdeprogramacion.challenges.aurebeshTraslator
 import com.softyorch.retosdeprogramacion.challenges.caesarEncryption
 import com.softyorch.retosdeprogramacion.challenges.callPokemonApi
@@ -65,6 +66,7 @@ fun main() {
         28 -> mathExpression()
         29 -> equalStrings()
         30 -> t9Keyboard()
+        31 -> abacusReader()
         else -> {
             println("No se ha encontrado la prueba")
         }

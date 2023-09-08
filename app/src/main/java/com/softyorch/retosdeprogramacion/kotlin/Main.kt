@@ -3,6 +3,7 @@ package com.softyorch.retosdeprogramacion.kotlin
 import com.softyorch.retosdeprogramacion.challenges.aurebeshTraslator
 import com.softyorch.retosdeprogramacion.challenges.caesarEncryption
 import com.softyorch.retosdeprogramacion.challenges.callPokemonApi
+import com.softyorch.retosdeprogramacion.challenges.countdown
 import com.softyorch.retosdeprogramacion.challenges.dbConnector
 import com.softyorch.retosdeprogramacion.challenges.getParametersValue
 import com.softyorch.retosdeprogramacion.challenges.helloWorld
@@ -57,6 +58,7 @@ fun main() {
         24 -> caesarEncryption()
         25 -> konamiCode()
         26 -> testingFriday13th()
+        27 -> countdown()
         else -> {
             println("No se ha encontrado la prueba")
         }

@@ -5,6 +5,7 @@ import com.softyorch.retosdeprogramacion.challenges.caesarEncryption
 import com.softyorch.retosdeprogramacion.challenges.callPokemonApi
 import com.softyorch.retosdeprogramacion.challenges.countdown
 import com.softyorch.retosdeprogramacion.challenges.dbConnector
+import com.softyorch.retosdeprogramacion.challenges.equalStrings
 import com.softyorch.retosdeprogramacion.challenges.getParametersValue
 import com.softyorch.retosdeprogramacion.challenges.helloWorld
 import com.softyorch.retosdeprogramacion.challenges.isFriday13
@@ -61,6 +62,7 @@ fun main() {
         26 -> testingFriday13th()
         27 -> countdown()
         28 -> mathExpression()
+        29 -> equalStrings()
         else -> {
             println("No se ha encontrado la prueba")
         }

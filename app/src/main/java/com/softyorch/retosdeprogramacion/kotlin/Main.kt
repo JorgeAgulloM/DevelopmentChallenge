@@ -24,6 +24,7 @@ import com.softyorch.retosdeprogramacion.challenges.spiral
 import com.softyorch.retosdeprogramacion.challenges.t9Keyboard
 import com.softyorch.retosdeprogramacion.challenges.tennisMatch
 import com.softyorch.retosdeprogramacion.challenges.testingFriday13th
+import com.softyorch.retosdeprogramacion.challenges.tetrisGame
 import com.softyorch.retosdeprogramacion.challenges.textAnalytics
 import com.softyorch.retosdeprogramacion.challenges.theHackerLanguage
 import com.softyorch.retosdeprogramacion.challenges.twinPrimes
@@ -69,6 +70,7 @@ fun main() {
         30 -> t9Keyboard()
         31 -> abacusReader()
         32 -> excelNumbNameOfColumn()
+        33 -> tetrisGame()
         else -> {
             println("No se ha encontrado la prueba")
         }

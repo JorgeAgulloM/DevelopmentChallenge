@@ -28,6 +28,7 @@ import com.softyorch.retosdeprogramacion.challenges.tetrisGame
 import com.softyorch.retosdeprogramacion.challenges.textAnalytics
 import com.softyorch.retosdeprogramacion.challenges.theHackerLanguage
 import com.softyorch.retosdeprogramacion.challenges.twinPrimes
+import com.softyorch.retosdeprogramacion.challenges.txtEditor
 import com.softyorch.retosdeprogramacion.challenges.typeOfString
 import com.softyorch.retosdeprogramacion.challenges.webScraping
 import com.softyorch.retosdeprogramacion.challenges.whatIsThisNumber
@@ -36,8 +37,14 @@ import com.softyorch.retosdeprogramacion.challenges.zeldaTriforce
 
 fun main() {
 
+    val regex = """^[1-9]+$""".toRegex()
     println("Porfavor, introduce el número de prueba: ")
-    when (readlnOrNull()?.toInt() ?: 0) {
+    val read = readln()
+    if (read.isBlank())
+        println("Seleccióna una prueba")
+    else if (!read.matches(regex))
+        println("debes selecciona numeros")
+    else when (read.toInt()) {
         1 -> leapYears()
         2 -> theHackerLanguage("Código leet. Hola, me llamo Jorge y nací en 1982. Soy desarrollador de software.")
         3 -> tennisMatch()
@@ -71,6 +78,7 @@ fun main() {
         31 -> abacusReader()
         32 -> excelNumbNameOfColumn()
         33 -> tetrisGame()
+        34 -> txtEditor()
         else -> {
             println("No se ha encontrado la prueba")
         }

@@ -19,22 +19,15 @@ import java.io.FileWriter
 
 fun txtEditor() {
     println("Challenge34. El txt")
-    readText()
+    startTxt()
 }
 
-private fun readText() {
+private fun startTxt() {
     val next = "seguir"
     val new = "nuevo"
+    file = File("$FILE_PATH$FILE_NAME")
 
     if (txtExist()) {
-        println("Escribe lo que quieras para guardarlo en el fichero")
-        val read = readln()
-
-        if (read.isNotBlank()) {
-            writeFile(read)
-        } else
-            println("No has escrito nada")
-    } else {
         println("Existe un fichero $FILE_NAME")
         println("¿Deseas seguir escribiendo en él o borrar y empezar de nuevo?")
 
@@ -43,13 +36,14 @@ private fun readText() {
 
             when (readln()) {
                 next -> {
-                    println("${readFile()}\n")
-                    writeFile(readln())
+                    val readFile = readFile()
+                    println(readFile)
+                    writeFile(readFile)
                     break
                 }
 
                 new -> {
-                    writeFile(readln())
+                    writeFile(null)
                     break
                 }
 
@@ -57,19 +51,29 @@ private fun readText() {
             }
         }
 
+    } else {
+        println("Escribe lo que quieras para guardarlo en el fichero")
+        val read = readln()
+
+        if (read.isNotBlank()) {
+            writeFile(null)
+        } else
+            println("No has escrito nada")
     }
 }
 
-private fun writeFile(text: String) {
+private fun writeFile(readeFile: String?) {
     try {
-        val file = File("$FILE_PATH$FILE_NAME")
         FileWriter(file).apply {
-            write(text)
+            val newRead = readln()
+            val textToWrite = if (readeFile.isNullOrBlank()) newRead else "$readeFile\n$newRead"
+            write(textToWrite)
+
             close()
         }
         println("Datos guardados. Adios")
     } catch (e: Exception) {
-        print("Error, no se ha gaurdado nada.")
+        print("Error, no se ha gaurdado nada. ${e.printStackTrace()}")
     }
 }
 
@@ -85,8 +89,7 @@ private fun readFile(): String {
 
 private fun txtExist(): Boolean {
     return try {
-        File("$FILE_PATH$FILE_NAME").exists()
-        true
+        file.exists()
     } catch (e: Exception) {
         false
     }
